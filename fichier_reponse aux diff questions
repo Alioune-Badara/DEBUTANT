@@ -1,0 +1,27 @@
+# Question 1 : 
+
+Remplacement du script build.sh par un Makefile
+Pour remplacer le script build.sh par un Makefile, on crée un fichier Makefile à la racine du projet.
+Ce Makefile prend en charge la compilation séparée des fichiers source, génère les exécutables "main" et "test"..., et permet de nettoyer le projet.
+Pour l'exécuter c'est la commande `make` aussi pour créer les exécutables et `make check` pour exécuter les tests unitaires.
+
+
+# Question 2 : Tests de main dans test_main.c
+
+J'ai remarqué que les tests dans test_main.c visent principalement à tester la fonction `parse_args` de main.c
+Ils couvrent différents scénarios, comme le nombre incorrect d'arguments, des arguments invalides et des arguments valides.
+
+
+# Question 3 : Implémentation des fonctions dans queens.c
+
+La réponse de cette question est dans le fichier implémentation
+
+
+
+# Question 4 : Test du programme finalisé pour plusieurs tailles de grille
+
+Une fois terminé avec l'implémentation et les tests, faudra tester le programme pour plusieurs tailles de grille, comme indiqué dans les spécifications.
+L'objectif est de vérifier que le programme résout correctement le problème des n-reines pour différentes valeurs de n.
+Pour cela, on exécute le programme avec différentes tailles de grille pour s’assurer qu'il répond bien au problème initial.
+Cela permettra de valider complètement notre solution.
+

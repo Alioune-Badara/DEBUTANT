@@ -1,1 +1,2 @@
 project init
+modif de la chaine de caractere
