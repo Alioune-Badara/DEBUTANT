@@ -11,6 +11,9 @@ Ce problème se généralise à un échiquier fictif de taille n×n
  Cette technique classique est appelée backtracking en informatique.
 C'est un procédé de résolution qui est particulièrement adapté pour ce type de problèmes. Cette technique classique est appelée **backtracking** en informatique et consiste à visiter l'ensemble des nœuds de l'arbre en partant de la racine et en choisissant de prendre systématiquement le chemin le plus à gauche qui n'a pas encore été suivi.
 
+Le nombre de solutions croît exponentiellement
+La conjecture qui semble la plus probable est que si l’on note R(n) le nombre de solutions au problème des n reines, alors log R(n)/(n log n) tend, quand n tend vers l’infini, vers une constante qui vaut à peu près 0,44438… Si c’est vrai, cela signifie que R(n) augmente aussi vite que n^0,44438n
+
 ## II-Description de l'algorithme 
 
 La solution du problème est codée sous la forme d'un tableau queens-row
