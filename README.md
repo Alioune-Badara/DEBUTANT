@@ -64,26 +64,47 @@ L'algorithme Traiter n'est pas défini, il peut s'agir de l'affichage de la solu
 
 
 Algo: PlacerReine(ligne)
+
 DONNÉES
+
    ligne: entier
+   
 VARIABLES GLOBALES
+
    n: entier
+   
    T: tableau de taille n
+   
 VARIABLES
+
    colonne: entier
+   
 DEBUT
+
    SI (ligne > n) ALORS
+   
       Traiter(T)
+      
    SINON
-      colonne ← 1      
+   
+      colonne ← 1  
+      
       TQ (colonne ≤ n) FAIRE
+      
          SI EstLibre(T,ligne,colonne) ALORS
+	 
 	    T[ligne] ← colonne
+     
 	    PlacerReine(ligne + 1)
+     
 	    T[ligne] ← 0
+     
          FSI
+	 
          colonne ← colonne + 1
-      FTQ					 
+	 
+      FTQ
+      
    FSI
 FIN
 
