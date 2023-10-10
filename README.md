@@ -23,21 +23,37 @@ L'algorithme EstLibre teste si la case à la ligne ligne et à la colonne colonn
 # Exemple:
 
 Algo:EstLibre(queens-rew,ligne,colonne):booléen
+
 DONNÉES
+
    ligne,colonne: entiers
+   
    queens_rew[1,n]: tableau d'entiers
+   
 VARIABLES
+
    l,c: entiers
+   
    ok: booléen
+   
 DEBUT
+
    ok ← VRAI
+   
    l ← 1
+   
    TQ (l ≤ ligne) FAIRE
+   
       c ← queens_rew[l]
+      
       ok ← ok ET (|ligne - l| ≠ |colonne - c|) ET (colonne ≠ c)
-      l ← l + 1            
+      
+      l ← l + 1  
+      
    FTQ
+   
    RETOURNER ok
+   
 FIN
 
 L'algorithme PlacerReine est chargé de placer les reines les unes après les autres en parcourant implicitement l'arbre de décision. l'algorithme ne s'arrête pas dès que les n reines sont placées mais poursuit son investigation dans l'arbre jusqu'au bout. Les n
